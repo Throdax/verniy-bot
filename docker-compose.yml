@@ -2,7 +2,7 @@
 version: "3.8"
 services:
   discord-bot:
-    image: ghcr.io/hitomarukonpaku/verniy-bot:latest
+    image: throdax/verniy-bot:latest    
     container_name: discord-bot
     user: "1000:1000"
     restart: always
@@ -10,7 +10,10 @@ services:
     volumes:
       # files
       - ./.env:/app/.env
-      - ./config.yaml:/app/config.yaml
+      - ./config.yaml:/app/config.yaml      
+      - ./src:/app/src
       # dir
       - ./logs:/app/logs
       - ./db:/app/db
+    command: sh -c "npm run deploy-commands && npm start"
+    
