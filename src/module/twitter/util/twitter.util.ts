@@ -8,11 +8,11 @@ export class TwitterUtil {
     * @returns {string} User URL
     */
   public static getUserUrl(username: string): string {
-    return `https://twitter.com/${username}`
+    return `https://x.com/${username}`
   }
 
   public static getTweetUrl(username: string, tweetId: string): string {
-    return `https://fxtwitter.com/${username}/status/${tweetId}/en`
+    return `https://fixupx.com/${username}/status/${tweetId}/en`
   }
 
   public static getTweetUrlById(tweetId: string): string {
@@ -26,7 +26,7 @@ export class TwitterUtil {
   }
 
   public static getSpaceUrl(spaceId: string): string {
-    return `https://twitter.com/i/spaces/${spaceId}`
+    return `https://x.com/i/spaces/${spaceId}`
   }
 
   public static getBroadcastUrl(broadcastId: string) {

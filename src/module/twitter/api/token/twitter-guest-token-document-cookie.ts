@@ -17,7 +17,7 @@ export class TwitterGuestTokenDocumentCookie extends TwitterGuestTokenBase {
   public async fetchToken(): Promise<string> {
     const { data } = await axios.request({
       method: 'GET',
-      url: 'https://twitter.com',
+      url: 'https://x.com',
       headers: {
         'user-agent': USER_AGENT,
       },
