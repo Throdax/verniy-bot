@@ -30,7 +30,7 @@ export class TwitterUtil {
   }
 
   public static getBroadcastUrl(broadcastId: string) {
-    return `https://twitter.com/i/broadcasts/${broadcastId}`
+    return `https://x.com/i/broadcasts/${broadcastId}`
   }
 
   public static getIncludesUserById(data: TweetV2SingleStreamResult, id: string) {
